@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b2o86xh7uejom"]
+[gd_scene format=3 uid="uid://b2o86xh7uejom"]
 
 [ext_resource type="Script" uid="uid://dqiutlsargfxa" path="res://Scripts/intro.gd" id="1_78bx0"]
 [ext_resource type="FontFile" uid="uid://bapjfnafh26rd" path="res://Assets/Fuente/VT323-Regular.ttf" id="2_fxjnd"]
@@ -43,7 +43,7 @@ _data = {
 &"RESET": SubResource("Animation_78bx0")
 }
 
-[node name="Intro" type="Control"]
+[node name="Intro" type="Control" unique_id=177887091]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -52,7 +52,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_78bx0")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=50540896]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -61,33 +61,32 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=1745277363]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
+offset_left = -49.000004
+offset_top = -5.0
+offset_right = 412.0
+offset_bottom = 60.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.2, 0.2)
 theme_override_fonts/font = ExtResource("2_fxjnd")
 theme_override_font_sizes/font_size = 64
 text = "Roma exije lealtad"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_f8vwp")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=726351062]
+libraries/ = SubResource("AnimationLibrary_f8vwp")
 
-[node name="Typewriter" type="AudioStreamPlayer" parent="."]
+[node name="Typewriter" type="AudioStreamPlayer" parent="." unique_id=2011292445]
 stream = ExtResource("3_a0ck7")
 
-[node name="Caballo" type="AudioStreamPlayer" parent="."]
+[node name="Caballo" type="AudioStreamPlayer" parent="." unique_id=271157525]
 stream = ExtResource("4_mjm7p")
 
-[node name="Carga" type="AudioStreamPlayer" parent="."]
+[node name="Carga" type="AudioStreamPlayer" parent="." unique_id=19475006]
 stream = ExtResource("5_v8bxe")
